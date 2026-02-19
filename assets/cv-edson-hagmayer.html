@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Edson Hagmayer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #a78bfa;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #a78bfa;
+        }
+        .contact-info p {
+            font-size: 13px;
+        }
+        .contact-label {
+            font-weight: bold;
+            color: #a78bfa;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #8b5cf6;
+            font-size: 16px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .content-item {
+            margin-bottom: 12px;
+            padding-left: 20px;
+        }
+        .content-item::before {
+            content: "▪ ";
+            color: #a78bfa;
+            margin-left: -15px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        .project-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .project-desc {
+            font-size: 13px;
+            color: #666;
+        }
+        .education-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .education-subtitle {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+            color: #999;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                max-width: 100%;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EDSON HAGMAYER</h1>
+        <p class="subtitle">Desenvolvedor de Software | Programador em Formação</p>
+
+        <div class="contact-info">
+            <p><span class="contact-label">Email:</span> edson.hagmayer@email.com</p>
+            <p><span class="contact-label">GitHub:</span> github.com/Hagmayer1969</p>
+            <p><span class="contact-label">LinkedIn:</span> linkedin.com/in/edson-hagmayer</p>
+            <p><span class="contact-label">WhatsApp:</span> +55 (48) 98837-8444</p>
+        </div>
+
+        <section>
+            <h2>Resumo Profissional</h2>
+            <p>Desenvolvedor em formação com grande paixão por programação e tecnologia. Possuo conhecimento sólido em HTML5, CSS3 e JavaScript, com experiência prática no desenvolvimento de projetos responsivos e modernos. Sou dedicado, proativo e sempre em busca de aprimorar minhas habilidades técnicas e comportamentais para entregar soluções de qualidade.</p>
+        </section>
+
+        <section>
+            <h2>Habilidades Técnicas</h2>
+            <div class="content-item">HTML5 (Estrutura Semântica, Tags Semânticas)</div>
+            <div class="content-item">CSS3 (Responsive Design, Grid Layout, Flexbox, Gradientes)</div>
+            <div class="content-item">JavaScript ES6+ (Manipulação DOM, Event Listeners, Async/Await)</div>
+            <div class="content-item">Python (Fundamentos e Lógica de Programação)</div>
+            <div class="content-item">Git & GitHub (Versionamento de Código, Controle de Versão)</div>
+            <div class="content-item">Figma (Prototipagem e Design Web)</div>
+        </section>
+
+        <section>
+            <h2>Habilidades Comportamentais</h2>
+            <div class="content-item">Comunicação Efetiva e Clara</div>
+            <div class="content-item">Trabalho em Equipe e Colaboração</div>
+            <div class="content-item">Resolução de Problemas e Pensamento Crítico</div>
+            <div class="content-item">Proatividade e Iniciativa</div>
+            <div class="content-item">Organização e Gerenciamento de Tempo</div>
+            <div class="content-item">Adaptabilidade e Flexibilidade</div>
+        </section>
+
+        <section>
+            <h2>Projetos Desenvolvidos</h2>
+            <div class="content-item">
+                <span class="project-title">Portfólio Responsivo</span>
+                <p class="project-desc">Landing page profissional com HTML5 semântico, CSS3 moderno e JavaScript. Design responsivo com paleta de cores púrpura, Grid Layout, animações e efeitos visuais sofisticados.</p>
+            </div>
+            <div class="content-item">
+                <span class="project-title">Calculadora Web</span>
+                <p class="project-desc">Aplicação web interativa para cálculos matemáticos com interface intuitiva e responsiva, desenvolvida com JavaScript puro e CSS moderno.</p>
+            </div>
+            <div class="content-item">
+                <span class="project-title">To-Do App</span>
+                <p class="project-desc">Gerenciador de tarefas com funcionalidades completas (adicionar, remover, marcar como concluída) utilizando JavaScript, HTML e CSS.</p>
+            </div>
+            <div class="content-item">
+                <span class="project-title">Conversor de Moedas</span>
+                <p class="project-desc">Ferramenta para conversão de moedas em tempo real utilizando API externa (consumo de dados com Fetch API) e JavaScript.</p>
+            </div>
+            <div class="content-item">
+                <span class="project-title">Galeria de Fotos Interativa</span>
+                <p class="project-desc">Galeria de imagens com lightbox modal, filtros, navegação e animações suaves implementadas com JavaScript vanilla.</p>
+            </div>
+            <div class="content-item">
+                <span class="project-title">Jogo da Memória</span>
+                <p class="project-desc">Jogo interativo desenvolvido em JavaScript com múltiplos níveis de dificuldade, sistema de pontuação e cronômetro.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formação Acadêmica</h2>
+            <div class="content-item">
+                <span class="education-title">Desenvolvimento de Software</span>
+                <p class="education-subtitle">Escola Eliti de Tecnologia da Informação (2025)</p>
+                <p>Curso intensivo com foco em programação, desenvolvimento web responsivo, JavaScript avançado e tecnologias modernas de frontend e backend.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certificações e Cursos</h2>
+            <div class="content-item">HTML5 e CSS3 - Fundamentos do Desenvolvimento Web</div>
+            <div class="content-item">JavaScript Essencial - Manipulação do DOM e Eventos</div>
+            <div class="content-item">Responsive Web Design e Mobile First</div>
+            <div class="content-item">Fundamentos de Git e GitHub para Versionamento</div>
+            <div class="content-item">Introdução a Python e Lógica de Programação</div>
+        </section>
+
+        <footer>
+            <p>Currículo atualizado em Fevereiro de 2026</p>
+            <p>Para mais informações, visite: <strong>github.com/Hagmayer1969</strong></p>
+        </footer>
+    </div>
+</body>
+</html>

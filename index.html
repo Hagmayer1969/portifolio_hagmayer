@@ -17,401 +17,245 @@
     />
   </head>
   <body>
-    <!-- Header / Navegação -->
-    <header class="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Edson Hagmayer</a>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">Início</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">Sobre</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Habilidades</a>
-            </li>
-            <li class="nav__item">
-              <a href="#projects" class="nav__link">Projetos</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contato</a>
-            </li>
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo">Edson Hagmayer</a>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home" class="nav-link active">Início</a></li>
+            <li><a href="#about" class="nav-link">Sobre</a></li>
+            <li><a href="#skills" class="nav-link">Habilidades</a></li>
+            <li><a href="#projects" class="nav-link">Projetos</a></li>
+            <li><a href="#contact" class="nav-link">Contato</a></li>
           </ul>
-          <div class="nav__close" id="nav-close">
-            <span>✕</span>
+          <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-        </div>
-        <div class="nav__toggle" id="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="nav-close" id="nav-close">✕</span>
         </div>
       </nav>
     </header>
 
-    <main class="main">
-      <!-- Seção 1: Home / Apresentação -->
-      <section class="home section" id="home">
-        <div class="home__container container">
-          <div class="home__content">
-            <div class="home__social">
-              <a
-                href="https://github.com/Hagmayer1969"
-                target="_blank"
-                class="home__social-icon"
-                title="GitHub"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- SEÇÃO 1: HOME / APRESENTAÇÃO -->
+      <section id="home">
+        <div class="container">
+          <div class="hero">
+            <div class="hero-content">
+              <div class="social-links">
+                <a
+                  href="https://github.com/Hagmayer1969"
+                  target="_blank"
+                  title="GitHub"
                 >
-                  <path
-                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://linkedin.com/in/"
-                target="_blank"
-                class="home__social-icon"
-                title="LinkedIn"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://linkedin.com/in/"
+                  target="_blank"
+                  title="LinkedIn"
                 >
-                  <path
-                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                  />
-                </svg>
-              </a>
-            </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                    />
+                  </svg>
+                </a>
+              </div>
 
-            <div class="home__img">
-              <div class="home__blob">
-                <img
-                  src="assets/edson.jpeg"
-                  alt="Foto de Edson Hagmayer"
-                  class="home__blob-img"
-                />
+              <h1>Edson <span>Hagmayer</span></h1>
+              <h2>Desenvolvedor Web Trainee  & Entusiasta de Tecnologia</h2>
+              <p>
+                Apaixonado por criar soluções inovadoras e contribuir para o
+                crescimento da comunidade tech
+              </p>
+              <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contact" class="btn btn-secondary">Fale Comigo</a>
               </div>
             </div>
 
-            <div class="home__data">
-              <h1 class="home__title">
-                Olá, eu sou <span>Edson Hagmayer</span>
-              </h1>
-              <h3 class="home__subtitle">Desenvolvedor de Software</h3>
-              <p class="home__description">
-                Apaixonado por tecnologia e em constante evolução na área de
-                programação. Buscando sempre aprender novas tecnologias e criar
-                soluções inovadoras.
-              </p>
-              <a href="#contact" class="button button--flex">
-                Entre em Contato
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="button__icon"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </a>
+            <div class="hero-image">
+              <div class="blob-circle">
+                <img src="assets/edson.jpeg" alt="Edson Hagmayer" />
+              </div>
             </div>
-          </div>
-
-          <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                class="home__scroll-mouse"
-              >
-                <rect x="6" y="3" width="12" height="18" rx="6"></rect>
-                <line x1="12" y1="7" x2="12" y2="11"></line>
-              </svg>
-              <span class="home__scroll-name">Role para baixo</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                class="home__scroll-arrow"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </a>
           </div>
         </div>
       </section>
 
-      <!-- Seção 2: Sobre Mim -->
-      <section class="about section" id="about">
-        <h2 class="section__title">Sobre Mim</h2>
-        <span class="section__subtitle">Minha Introdução</span>
-
-        <div class="about__container container">
-          <img
-            src="assets/edson.jpeg"
-            alt="Edson Hagmayer"
-            class="about__img"
-          />
-
-          <div class="about__data">
-            <p class="about__description">
-              Sou estudante de programação, apaixonado por desenvolvimento de
-              software e novas tecnologias. Atualmente, estou me especializando
-              em desenvolvimento web, buscando criar aplicações funcionais e com
-              boas práticas de programação. Meu objetivo é me tornar um
-              profissional completo na área de tecnologia, contribuindo com
-              projetos inovadores e impactantes.
-            </p>
-
-            <div class="about__info">
-              <div>
-                <span class="about__info-title">01+</span>
-                <span class="about__info-name">Anos de<br />Experiência</span>
-              </div>
-              <div>
-                <span class="about__info-title">05+</span>
-                <span class="about__info-name">Projetos<br />Concluídos</span>
-              </div>
-              <div>
-                <span class="about__info-title">03+</span>
-                <span class="about__info-name">Cursos<br />Realizados</span>
-              </div>
+      <!-- SEÇÃO 2: ABOUT / SOBRE -->
+      <section id="about">
+        <div class="container">
+          <h2 class="section-title">Sobre Mim</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img src="assets/edson.jpeg" alt="Edson Hagmayer" />
             </div>
+            <div class="about-text">
+              <h3>Quem sou eu?</h3>
+              <p>
+                Sou um desenvolvedor apaixonado por programação e tecnologia, em
+                constante processo de aprendizado e evolução profissional. Estou
+                descobrindo o fascinante mundo do desenvolvimento de software e
+                buscando aprimorar minhas habilidades técnicas e
+                comportamentais.
+              </p>
+              <p>
+                Meu objetivo é me tornar um desenvolvedor full-stack competente,
+                capaz de criar soluções inovadoras e contribuir
+                significativamente para a comunidade de tecnologia.
+              </p>
 
-            <div class="about__buttons">
+              <div class="about-stats">
+                <div class="stat">
+                  <h4>5+</h4>
+                  <p>Projetos</p>
+                </div>
+                <div class="stat">
+                  <h4>100%</h4>
+                  <p>Dedicação</p>
+                </div>
+                <div class="stat">
+                  <h4>1+</h4>
+                  <p>Ano de Aprendizado</p>
+                </div>
+              </div>
+
               <a
-                download=""
                 href="assets/cv-edson-hagmayer.pdf"
-                class="button button--flex"
+                download
+                class="btn btn-primary"
+                >Baixar CV</a
               >
-                Download CV
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  class="button__icon"
-                >
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                  <polyline points="7 10 12 15 17 10"></polyline>
-                  <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Seção 3: Habilidades -->
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Habilidades</h2>
-        <span class="section__subtitle"
-          >Minhas Competências Técnicas e Comportamentais</span
-        >
-
-        <div class="skills__container container">
-          <!-- Habilidades Técnicas -->
-          <div class="skills__content skills__open">
-            <div class="skills__header">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                class="skills__icon"
-              >
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
-              <div>
-                <h1 class="skills__title">Habilidades Técnicas</h1>
-                <span class="skills__subtitle">Hard Skills</span>
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                class="skills__arrow"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </div>
-
-            <div class="skills__list">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">HTML</h3>
-                  <span class="skills__number">80%</span>
+      <!-- SEÇÃO 3: SKILLS / HABILIDADES -->
+      <section id="skills">
+        <div class="container">
+          <h2 class="section-title">Habilidades</h2>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Hard Skills</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">HTML</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                  </div>
                 </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__html"></span>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">CSS</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">CSS</h3>
-                  <span class="skills__number">75%</span>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                  </div>
                 </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__css"></span>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percent">25%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 25%"></div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">JavaScript</h3>
-                  <span class="skills__number">70%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__js"></span>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Git & GitHub</h3>
-                  <span class="skills__number">65%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__git"></span>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Python</h3>
-                  <span class="skills__number">60%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__python"></span>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Git</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Habilidades Comportamentais -->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                class="skills__icon"
-              >
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-              <div>
-                <h1 class="skills__title">Habilidades Comportamentais</h1>
-                <span class="skills__subtitle">Soft Skills</span>
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                class="skills__arrow"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </div>
-
-            <div class="skills__list">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Comunicação</h3>
-                  <span class="skills__number">85%</span>
+            <div class="skill-group">
+              <h3>Soft Skills </h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Comunicação</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
                 </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__communication"></span>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Trabalho em Equipe</span>
+                    <span class="skill-percent">95%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%"></div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Trabalho em Equipe</h3>
-                  <span class="skills__number">90%</span>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Resolução de Problemas</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
                 </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__teamwork"></span>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Proatividade</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Resolução de Problemas</h3>
-                  <span class="skills__number">80%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__problem"></span>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Proatividade</h3>
-                  <span class="skills__number">85%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__proactive"></span>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Aprendizado Contínuo</h3>
-                  <span class="skills__number">95%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__learning"></span>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Organização</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -419,258 +263,154 @@
         </div>
       </section>
 
-      <!-- Seção 4: Projetos -->
-      <section class="projects section" id="projects">
-        <h2 class="section__title">Projetos</h2>
-        <span class="section__subtitle">Meus Trabalhos Recentes</span>
+      <!-- SEÇÃO 4: PROJECTS / PROJETOS -->
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-title">Meus Projetos</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/edson.jpeg" alt="Projeto 1" />
+              </div>
+              <div class="project-content">
+                <h3>Portfólio Responsivo</h3>
+                <p>
+                  Uma landing page moderna e responsiva desenvolvida com HTML,
+                  CSS e JavaScript, apresentando projetos e habilidades
+                  profissionais.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="link-btn">Visualizar</a>
+                  <a href="#" class="link-btn">Código</a>
+                </div>
+              </div>
+            </article>
 
-        <div class="projects__container container">
-          <!-- Projeto 1 -->
-          <article class="projects__card">
-            <div class="projects__img-container">
-              <img
-                src="https://images.unsplash.com/photo-1557821552-17105176677c?w=600"
-                alt="E-commerce Website"
-                class="projects__img"
-              />
-            </div>
-            <div class="projects__content">
-              <h3 class="projects__title">E-commerce Website</h3>
-              <p class="projects__description">
-                Landing page de um e-commerce com design moderno e responsivo.
-                Inclui catálogo de produtos, carrinho de compras e página de
-                checkout.
-              </p>
-              <div class="projects__technologies">
-                <span class="projects__tech">HTML</span>
-                <span class="projects__tech">CSS</span>
-                <span class="projects__tech">JavaScript</span>
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/edson.jpeg" alt="Projeto 2" />
               </div>
-              <div class="projects__buttons">
-                <a href="#" class="projects__button" target="_blank">
-                  Demo
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    ></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="#" class="projects__button" target="_blank">
-                  Código
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                    />
-                  </svg>
-                </a>
+              <div class="project-content">
+                <h3>Calculadora Web</h3>
+                <p>
+                  Aplicação web interativa para realizar cálculos matemáticos
+                  básicos com interface intuitiva e responsiva.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="link-btn">Visualizar</a>
+                  <a href="#" class="link-btn">Código</a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Projeto 2 -->
-          <article class="projects__card">
-            <div class="projects__img-container">
-              <img
-                src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600"
-                alt="Task Manager App"
-                class="projects__img"
-              />
-            </div>
-            <div class="projects__content">
-              <h3 class="projects__title">Task Manager App</h3>
-              <p class="projects__description">
-                Aplicação de gerenciamento de tarefas com funcionalidades de
-                adicionar, editar e excluir tarefas. Inclui filtros e
-                persistência de dados.
-              </p>
-              <div class="projects__technologies">
-                <span class="projects__tech">HTML</span>
-                <span class="projects__tech">CSS</span>
-                <span class="projects__tech">JavaScript</span>
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/edson.jpeg" alt="Projeto 3" />
               </div>
-              <div class="projects__buttons">
-                <a href="#" class="projects__button" target="_blank">
-                  Demo
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    ></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="#" class="projects__button" target="_blank">
-                  Código
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                    />
-                  </svg>
-                </a>
+              <div class="project-content">
+                <h3>To-Do App</h3>
+                <p>
+                  Aplicação de lista de tarefas com funcionalidades de
+                  adicionar, remover e marcar tarefas como concluídas.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="link-btn">Visualizar</a>
+                  <a href="#" class="link-btn">Código</a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Projeto 3 -->
-          <article class="projects__card">
-            <div class="projects__img-container">
-              <img
-                src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600"
-                alt="Weather App"
-                class="projects__img"
-              />
-            </div>
-            <div class="projects__content">
-              <h3 class="projects__title">Weather App</h3>
-              <p class="projects__description">
-                Aplicação de previsão do tempo que consome API externa para
-                exibir informações meteorológicas em tempo real de qualquer
-                cidade.
-              </p>
-              <div class="projects__technologies">
-                <span class="projects__tech">HTML</span>
-                <span class="projects__tech">CSS</span>
-                <span class="projects__tech">JavaScript</span>
-                <span class="projects__tech">API REST</span>
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/edson.jpeg" alt="Projeto 4" />
               </div>
-              <div class="projects__buttons">
-                <a href="#" class="projects__button" target="_blank">
-                  Demo
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    ></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="#" class="projects__button" target="_blank">
-                  Código
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                    />
-                  </svg>
-                </a>
+              <div class="project-content">
+                <h3>Conversor de Moedas</h3>
+                <p>
+                  Ferramenta para converter valores entre diferentes moedas
+                  utilizando uma API externa em tempo real.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="link-btn">Visualizar</a>
+                  <a href="#" class="link-btn">Código</a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Projeto 4 -->
-          <article class="projects__card">
-            <div class="projects__img-container">
-              <img
-                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600"
-                alt="Calculator App"
-                class="projects__img"
-              />
-            </div>
-            <div class="projects__content">
-              <h3 class="projects__title">Calculator App</h3>
-              <p class="projects__description">
-                Calculadora científica com interface moderna e funcionalidades
-                avançadas. Suporta operações básicas e científicas com histórico
-                de cálculos.
-              </p>
-              <div class="projects__technologies">
-                <span class="projects__tech">HTML</span>
-                <span class="projects__tech">CSS</span>
-                <span class="projects__tech">JavaScript</span>
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/edson.jpeg" alt="Projeto 5" />
               </div>
-              <div class="projects__buttons">
-                <a href="#" class="projects__button" target="_blank">
-                  Demo
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    ></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="#" class="projects__button" target="_blank">
-                  Código
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                    />
-                  </svg>
-                </a>
+              <div class="project-content">
+                <h3>Galeria de Fotos</h3>
+                <p>
+                  Galeria interativa de imagens com filtros, lightbox e
+                  animações suaves implementadas com JavaScript.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="link-btn">Visualizar</a>
+                  <a href="#" class="link-btn">Código</a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/edson.jpeg" alt="Projeto 6" />
+              </div>
+              <div class="project-content">
+                <h3>Jogo da Memória</h3>
+                <p>
+                  Jogo interativo em JavaScript com múltiplos níveis de
+                  dificuldade e sistema de pontuação.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="link-btn">Visualizar</a>
+                  <a href="#" class="link-btn">Código</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <!-- Seção 5: Contato -->
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contato</h2>
-        <span class="section__subtitle">Entre em contato comigo</span>
-
-        <div class="contact__container container">
-          <div class="contact__content">
-            <h3 class="contact__title">Fale Comigo</h3>
-
-            <div class="contact__info">
-              <div class="contact__card">
+      <!-- SEÇÃO 5: CONTACT / CONTATO -->
+      <section id="contact">
+        <div class="container">
+          <h2 class="section-title">Fale Comigo</h2>
+          <div class="contact-content">
+            <div class="contact-cards">
+              <article class="contact-card">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -679,36 +419,20 @@
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
-                  class="contact__card-icon"
                 >
                   <path
                     d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
                   ></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
-                <h3 class="contact__card-title">Email</h3>
-                <span class="contact__card-data">edson.hagmayer@email.com</span>
-                <a
-                  href="mailto:edson.hagmayer@email.com"
-                  class="contact__button"
+                <h3>Email</h3>
+                <p>edson.hagmayer@email.com</p>
+                <a href="mailto:edson.hagmayer@email.com" class="contact-btn"
+                  >Enviar Email</a
                 >
-                  Enviar Email
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </a>
-              </div>
+              </article>
 
-              <div class="contact__card">
+              <article class="contact-card">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -717,129 +441,78 @@
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
-                  class="contact__card-icon"
                 >
                   <path
                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
                   ></path>
                 </svg>
-                <h3 class="contact__card-title">WhatsApp</h3>
-                <span class="contact__card-data">+55 (48) 99999-9999</span>
+                <h3>WhatsApp</h3>
+                <p>+55 (48) 99999-9999</p>
                 <a
                   href="https://wa.me/5548999999999"
                   target="_blank"
-                  class="contact__button"
+                  class="contact-btn"
+                  >Enviar Mensagem</a
                 >
-                  Enviar Mensagem
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </a>
-              </div>
+              </article>
 
-              <div class="contact__card">
+              <article class="contact-card">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
                   height="32"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  class="contact__card-icon"
                 >
                   <path
                     d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
                   />
                 </svg>
-                <h3 class="contact__card-title">LinkedIn</h3>
-                <span class="contact__card-data">Edson Hagmayer</span>
+                <h3>LinkedIn</h3>
+                <p>Edson Hagmayer</p>
                 <a
                   href="https://linkedin.com/in/"
                   target="_blank"
-                  class="contact__button"
+                  class="contact-btn"
+                  >Ver Perfil</a
                 >
-                  Ver Perfil
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </a>
-              </div>
+              </article>
             </div>
-          </div>
 
-          <div class="contact__content">
-            <h3 class="contact__title">Envie uma Mensagem</h3>
-
-            <form action="#" class="contact__form" id="contact-form">
-              <div class="contact__form-div">
-                <label for="name" class="contact__form-tag">Nome</label>
+            <form class="contact-form" id="contact-form">
+              <h3>Envie uma Mensagem</h3>
+              <div class="form-group">
+                <label for="name">Nome</label>
                 <input
                   type="text"
-                  name="name"
                   id="name"
-                  class="contact__form-input"
-                  placeholder="Seu nome"
+                  name="name"
                   required
+                  placeholder="Seu nome"
                 />
               </div>
-
-              <div class="contact__form-div">
-                <label for="email" class="contact__form-tag">Email</label>
+              <div class="form-group">
+                <label for="email">Email</label>
                 <input
                   type="email"
-                  name="email"
                   id="email"
-                  class="contact__form-input"
-                  placeholder="Seu email"
+                  name="email"
                   required
+                  placeholder="Seu email"
                 />
               </div>
-
-              <div class="contact__form-div contact__form-area">
-                <label for="message" class="contact__form-tag">Mensagem</label>
+              <div class="form-group">
+                <label for="message">Mensagem</label>
                 <textarea
-                  name="message"
                   id="message"
-                  cols="30"
-                  rows="10"
-                  class="contact__form-input"
-                  placeholder="Escreva sua mensagem aqui..."
+                  name="message"
+                  rows="6"
                   required
+                  placeholder="Escreva sua mensagem aqui..."
                 ></textarea>
               </div>
-
-              <button type="submit" class="button button--flex">
+              <button type="submit" class="btn btn-primary">
                 Enviar Mensagem
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  class="button__icon"
-                >
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
               </button>
             </form>
           </div>
@@ -847,81 +520,15 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer__container container">
-        <h1 class="footer__title">Edson Hagmayer</h1>
-
-        <ul class="footer__list">
-          <li>
-            <a href="#about" class="footer__link">Sobre</a>
-          </li>
-          <li>
-            <a href="#projects" class="footer__link">Projetos</a>
-          </li>
-          <li>
-            <a href="#contact" class="footer__link">Contato</a>
-          </li>
-        </ul>
-
-        <div class="footer__social">
-          <a
-            href="https://github.com/Hagmayer1969"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://linkedin.com/in/"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path
-                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-              />
-            </svg>
-          </a>
-        </div>
-
-        <span class="footer__copy">
-          &#169; 2026 Edson Hagmayer. Todos os direitos reservados.
-        </span>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Edson Hagmayer. Todos os direitos reservados.</p>
+        <p>
+          Desenvolvido com <span style="color: #a78bfa">❤</span> e dedicação
+        </p>
       </div>
     </footer>
-
-    <!-- Scroll Up Button -->
-    <a href="#" class="scrollup" id="scroll-up">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        class="scrollup__icon"
-      >
-        <polyline points="18 15 12 9 6 15"></polyline>
-      </svg>
-    </a>
 
     <script src="script.js"></script>
   </body>
