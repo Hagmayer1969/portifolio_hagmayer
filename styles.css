@@ -743,10 +743,29 @@ footer {
   margin-top: 4rem;
 }
 
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 footer p {
   margin: 0.5rem 0;
   color: #fff;
   font-size: 0.95rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  opacity: 0.9;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  opacity: 1;
 }
 
 /* ==================== RESPONSIVE DESIGN ==================== */
@@ -863,5 +882,27 @@ footer p {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ==================== ACCESSIBILITY ==================== */
+/* Respeitando preferência de movimentos reduzidos */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Melhor contraste para modo de foco */
+@media (prefers-contrast: more) {
+  :root {
+    --color-primary: #9d6dd9;
+    --color-secondary: #7c3aed;
   }
 }
